@@ -1,0 +1,144 @@
+/* Header.css */
+
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    height: auto;
+}
+
+.firstnav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.childfirst,
+.childsecond {
+    display: flex;
+    gap: 10px;
+}
+
+.childsecond .social-icon {
+    height: 25px;
+}
+
+.desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-image {
+    height: 100px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+}
+
+.icon {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    width: 100%;
+}
+
+.icon-image {
+    height: 30px;
+}
+
+/* Mobile Styles */
+.mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .navbarmobile {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5px 10px;
+    }
+
+    .menu-icon {
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 250px;
+        background-color: #333;
+        padding: 20px;
+        transition: right 0.3s ease-in-out;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+        color: white;
+    }
+
+    .mobile.active .nav-links {
+        right: 0;
+    }
+
+    .firstnav {
+        display: none;
+    }
+
+    .logo-image {
+        height: 50px;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 87px;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+}

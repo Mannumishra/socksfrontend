@@ -1,7 +1,9 @@
 import React from 'react'
 import banare2 from "../../Images/banare2.jpg"
 import banare1 from "../../Images/banare1.jpeg"
+import banare3 from "../../Images/banare3.jpeg"
 import Shop from '../Shop/Shop'
+import TraindingCollection from '../TraindingColection/TraindingCollection'
 
 const Home = () => {
   return (
@@ -17,10 +19,10 @@ const Home = () => {
       <img src={banare1} class="d-block w-100" alt="..." />
     </div>
     <div class="carousel-item">
-      <img src={banare1} class="d-block w-100" alt="..." />
+      <img src={banare2} class="d-block w-100" alt="..." />
     </div>
     <div class="carousel-item">
-      <img src={banare2} class="d-block w-100" alt="..." />
+      <img src={banare3} class="d-block w-100" alt="..." />
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -35,6 +37,9 @@ const Home = () => {
 
 <section style={{marginTop:50}}>
 <Shop />
+</section>
+<section>
+  <TraindingCollection />
 </section>
  </>
   )

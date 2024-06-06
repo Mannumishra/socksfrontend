@@ -120,6 +120,7 @@
         background-color: #333;
         padding: 20px;
         transition: right 0.3s ease-in-out;
+        z-index: 999;
     }
 
     .nav-links-custom a {

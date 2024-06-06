@@ -23,8 +23,8 @@ const Header = () => {
       <div className="navbar-custom">
         <div className="firstnav-custom">
           <div className="childfirst-custom">
-            <div><p><Link to='/refundpolicy' style={{textDecoration:"none",color:"black"}}>Refund Policy</Link></p></div>,
-            <div><p><Link style={{textDecoration:"none",color:"black"}}>Track your Order</Link></p></div>
+            <div><p><Link to='/refundpolicy' style={{ textDecoration: "none", color: "black" }}>Refund Policy</Link></p></div>,
+            <div><p><Link style={{ textDecoration: "none", color: "black" }}>Track your Order</Link></p></div>
           </div>
           <div className="childsecond-custom">
             <div>
@@ -47,6 +47,7 @@ const Header = () => {
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
             <Link to="/shop">Shop</Link>
+            <Link to="/collection">COLLECTION</Link>
             <Link to="/contact">Contact</Link>
           </div>
           <div className="logo-custom">
@@ -104,6 +105,9 @@ const Header = () => {
           </Link>
           <Link to="/shop" onClick={toggleMenu}>
             Shop
+          </Link>
+          <Link to="/collection" onClick={toggleMenu}>
+            COLLECTION
           </Link>
           <Link to="/contact" onClick={toggleMenu}>
             Contact

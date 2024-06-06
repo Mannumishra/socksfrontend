@@ -1,0 +1,45 @@
+.traindingcollection{
+    padding: 20px;
+    margin-top: 20px;
+}
+.traingindheading p{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px ;
+    font-style:"Tenor Sans" ,sans-serif ;
+}
+.traindingbox{
+    display: flex;
+    gap: 20px;
+}
+.traindingimage{
+    position: relative;
+    width: 25%;
+    cursor: pointer;
+}
+
+.traindingimage img{
+    width: 100%;
+    height: 350px;
+}
+.traingtext{
+    position: absolute;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.046);
+    /* opacity: 0.1; */
+    left: 0%;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.traingtext p{
+    /* color:rgba(240, 11, 11, 0.909); */
+    color: aliceblue;
+    /* color: antiquewhite; */
+    /* color: wheat; */
+    font-size: 22px;
+    font-weight: 800;
+}

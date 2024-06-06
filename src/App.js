@@ -12,6 +12,9 @@ import Pcrvacy from './Component/PrivacyPolicy/Pcrvacy';
 import Shop from './Component/Shop/Shop';
 import Signup from './Component/Signup/Signup';
 import SinglePage from './Component/Singlepage/SinglePage';
+import Refund from './Component/RefundPolicy/Refund';
+import Term from './Component/Term&Condi/Term';
+import Cart from './Component/Cart/Cart';
 
 function App() {
   return (
@@ -29,6 +32,9 @@ function App() {
           <Route path='/shop' element={<Shop />} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/details/:_id' element={<SinglePage />} />
+          <Route path='/refundpolicy' element={<Refund />} />
+          <Route path='/term' element={<Term />} />
+          <Route path='/cart' element={<Cart />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -104,39 +104,39 @@ const Shop = () => {
   ];
 
   return (
-   <>
-   <div>
-    <p className='shopheading'>Shop Our Entire Selection</p>
-    <div className="product-list">
-      {products.map((product, index) => (
-        <div key={product.id} className="product-card" onMouseEnter={() => handleMouseEnter(index)} onMouseLeave={handleMouseLeave}>
-          <div className="product-images">
-            <img src={hoveredProduct === index ? product.hoverImage : product.image} alt={product.name} />
-          </div>
-          <div className="product-info">
-            <h2 className="product-name">{product.name}</h2>
-            <div className="product-rating">
-              <span><i class="ri-star-fill"></i></span>
-              <span><i class="ri-star-fill"></i></span>
-              <span><i class="ri-star-fill"></i></span>
-              <span><i class="ri-star-fill"></i></span>
-              <span><i class="ri-star-fill"></i></span>
-            </div>
-            <div className="product-price">
-              <span className="original-price">&#8377;{product.price}</span>
-              <span className="new-price">&#8377;{product.newPrice}</span>
-              <span className='text-danger'>Save 60%</span>
-            </div>
-            <button className="add-to-cart-button">Add to Cart</button>
-          </div>
-        </div>
-      ))}
-    </div>
-    <div className='viewbutton'>
-                    <button className="viewallbutton">View All</button>
+    <>
+      <div>
+        <p className='shopheading'>Shop Our Entire Selection</p>
+        <div className="product-list">
+          {products.map((product, index) => (
+            <div key={product.id} className="product-card" onMouseEnter={() => handleMouseEnter(index)} onMouseLeave={handleMouseLeave}>
+              <div className="product-images">
+                <img src={hoveredProduct === index ? product.hoverImage : product.image} alt={product.name} />
+              </div>
+              <div className="product-info">
+                <h2 className="product-name">{product.name}</h2>
+                <div className="product-rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
                 </div>
-   </div>
-   </>
+                <div className="product-price">
+                  <span className="original-price">&#8377;{product.price}</span>
+                  <span className="new-price">&#8377;{product.newPrice}</span>
+                  <span className='text-danger'>Save 60%</span>
+                </div>
+                <button className="add-to-cart-button">Add to Cart</button>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className='viewbutton'>
+          <button className="viewallbutton">View All</button>
+        </div>
+      </div>
+    </>
   );
 };
 

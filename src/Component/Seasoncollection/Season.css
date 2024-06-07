@@ -131,3 +131,33 @@
 .viewallbutton:hover {
     background-color: rgba(0, 0, 0, 0.537);
 }
+
+@media(max-width:768px) {
+    .shopheading {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+
+    .viewallbutton {
+        width: 34%;
+    }
+
+    .product-images img {
+        height: 170px;
+    }
+
+    .product-name {
+        font-size: 15px;
+    }
+    product-rating {
+        font-size: 15px;
+    }
+    .product-price {
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+    .add-to-cart-button {
+        padding: 5px 4px;
+        font-size: 14px;
+    }
+}

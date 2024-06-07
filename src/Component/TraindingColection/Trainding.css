@@ -1,28 +1,32 @@
-.traindingcollection{
+.traindingcollection {
     padding: 20px;
     margin-top: 20px;
 }
-.traingindheading p{
+
+.traingindheading p {
     text-align: center;
     text-transform: uppercase;
-    font-size: 30px ;
+    font-size: 30px;
     font-family: 'Roboto Slab', serif;
 }
-.traindingbox{
+
+.traindingbox {
     display: flex;
     gap: 20px;
 }
-.traindingimage{
+
+.traindingimage {
     position: relative;
     width: 25%;
     cursor: pointer;
 }
 
-.traindingimage img{
+.traindingimage img {
     width: 100%;
     height: 350px;
 }
-.traingtext{
+
+.traingtext {
     position: absolute;
     top: 0%;
     background-color: rgba(0, 0, 0, 0.046);
@@ -35,11 +39,44 @@
     align-items: center;
     display: flex;
 }
-.traingtext p{
-    /* color:rgba(240, 11, 11, 0.909); */
-    color: aliceblue;
-    /* color: antiquewhite; */
-    /* color: wheat; */
+
+.traingtext p {
+    color: orange;
     font-size: 22px;
     font-weight: 800;
+}
+
+@media(max-width:768px) {
+    .traingindheading p {
+        font-size: 24px;
+    }
+    .traindingbox {
+        width: 100%;
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .traindingimage {
+        position: relative;
+        width: 45%;
+        cursor: pointer;
+    }
+    .traindingcollection {
+        padding: 0px;
+        margin-top: 20px;
+    }
+    .traindingimage img {
+        width: 100%;
+        height: 200px;
+    }
+    .traingtext p {
+        color: orange;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .traindingcollection {
+        margin-top: 30px;
+    }
+    
 }

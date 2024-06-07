@@ -3,7 +3,7 @@ import './Home.css'
 import banare2 from "../../Images/banare2.jpg"
 import banare1 from "../../Images/banare1.jpeg"
 import banare3 from "../../Images/banare3.jpeg"
-import banare from "../../Images/banare.webp"
+import banare from "../../Images/banarefirst.jpeg"
 import Shop from '../Shop/Shop'
 import TraindingCollection from '../TraindingColection/TraindingCollection'
 import SeasonCollection from '../Seasoncollection/SeasonCollection'
@@ -27,7 +27,7 @@ const Home = () => {
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src={banare} class="d-block w-100" alt="..." style={{height:420}}/>
+      <img src={banare} class="d-block w-100" alt="..."/>
     </div>
     <div class="carousel-item ">
       <img src={banare1} class="d-block w-100" alt="..." />

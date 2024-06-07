@@ -1,4 +1,5 @@
 import React from 'react'
+import './Home.css'
 import banare2 from "../../Images/banare2.jpg"
 import banare1 from "../../Images/banare1.jpeg"
 import banare3 from "../../Images/banare3.jpeg"

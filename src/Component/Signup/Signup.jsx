@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Signup.css';
 import { Link } from 'react-router-dom';
 
 const Signup = () => {
+  useEffect(()=>{
+    window.scrollTo({
+      top : 0,
+      behavior : "smooth"
+    })
+  },[])
   return (
     <div className="signup-container">
       <div className="signup-header">

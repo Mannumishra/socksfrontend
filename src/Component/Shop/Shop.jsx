@@ -127,7 +127,7 @@ const Shop = () => {
                   <span className="new-price">&#8377;{product.newPrice}</span>
                   <span className='text-danger'>Save 60%</span>
                 </div>
-                <button className="add-to-cart-button">Add to Cart</button>
+                <button className="add-to-cart-button">View Details</button>
               </div>
             </div>
           ))}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Home.css'
 import banare2 from "../../Images/banare2.jpg"
 import banare1 from "../../Images/banare1.jpeg"
@@ -10,6 +10,12 @@ import SeasonCollection from '../Seasoncollection/SeasonCollection'
 import Limtedtime from '../Limtedtime/Limtedtime'
 
 const Home = () => {
+  useEffect(()=>{
+    window.scrollTo({
+      top : 0,
+      behavior : "smooth"
+    })
+  },[])
   return (
  <>
  <div id="carouselExampleIndicators" class="carousel slide">

@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Cart.css';
+
 // import deleteIcon from '../../Images/delete.svg'; 
 // import product1 from '../../Images/product1.jpg'; 
 
 const Cart = () => {
+
   // Example data for items in the cart
   const [cartItems, setCartItems] = useState([
     { id: 1, name: 'Product 1', price: 19.99, quantity: 2, },
@@ -22,6 +24,12 @@ const Cart = () => {
     setCartItems(updatedCart);
   };
 
+  useEffect(()=>{
+    window.scrollTo({
+      top : 0,
+      behavior : "smooth"
+    })
+  },[])
   return (
     <div className="cart-container">
       <h1>Your Cart</h1>

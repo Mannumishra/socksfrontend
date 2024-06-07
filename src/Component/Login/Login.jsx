@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Login.css';
 import { Link } from 'react-router-dom';
 
 const Login = () => {
+  useEffect(()=>{
+    window.scrollTo({
+      top : 0,
+      behavior : "smooth"
+    })
+  },[])
   return (
     <div className="login-container">
       <div className="login-header">

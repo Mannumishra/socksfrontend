@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Privacy.css';
 
 const Privacy = () => {
+ 
+  useEffect(()=>{
+    window.scrollTo({
+      top : 0,
+      behavior : "smooth"
+    })
+  },[])
+
   return (
     <div className="privacy-container">
       <h1 className="privacy-title">Privacy Policy</h1>

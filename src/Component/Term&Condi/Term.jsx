@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Term.css';
 
 const Term = () => {
+
+  useEffect(()=>{
+    window.scrollTo({
+      top : 0,
+      behavior : "smooth"
+    })
+  },[])
   return (
     <div className="terms-container">
       <h1 className="terms-title">Terms and Conditions</h1>

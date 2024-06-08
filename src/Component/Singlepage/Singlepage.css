@@ -1,58 +1,56 @@
-/* Custom CSS for SinglePage component */
-
-.container-fluid {
+.container-fluid-custom {
     width: 100%;
     padding: 0;
     margin: 0;
   }
   
-  .productdetailsheight {
+  .product-details-height {
     margin-top: 0px;
   }
   
-  .container {
+  .container-custom {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
   }
   
-  .row {
+  .row-custom {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
   }
   
-  .col-lg-6 {
+  .col-lg-6-custom {
     flex: 1;
     min-width: 300px;
   }
   
-  .carousel {
+  .carousel-custom {
     position: relative;
   }
   
-  .carousel-inner {
+  .carousel-inner-custom {
     display: flex;
   }
   
-  .carousel-item {
+  .carousel-item-custom {
     flex: 1;
     display: none;
   }
   
-  .carousel-item.active {
+  .carousel-item-custom.active {
     display: block;
   }
   
-  .singlrpageimage {
+  .single-page-image {
     width: 100%;
     height: 400px;
     object-fit: cover;
     cursor: pointer;
   }
   
-  .carousel-control-prev,
-  .carousel-control-next {
+  .carousel-control-prev-custom,
+  .carousel-control-next-custom {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -63,22 +61,22 @@
     color: orange;
   }
   
-  .carousel-control-prev {
+  .carousel-control-prev-custom {
     left: 0;
   }
   
-  .carousel-control-next {
+  .carousel-control-next-custom {
     right: 0;
   }
   
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
+  .carousel-control-prev-icon-custom,
+  .carousel-control-next-icon-custom {
     display: inline-block;
     width: 30px;
     height: 30px;
   }
   
-  .thumbnails {
+  .thumbnails-custom {
     display: flex;
     overflow-x: auto;
     gap: 10px;
@@ -86,7 +84,7 @@
     margin-top: 10px;
   }
   
-  .singlrpageimageslide {
+  .single-page-image-slide {
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -94,29 +92,32 @@
     border: 2px solid transparent;
   }
   
-  .singlrpageimageslide.active {
+  .single-page-image-slide.active {
     border-color: orange;
   }
   
-  .productsecondcol {
+  .product-second-col {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
   
-  .productname{
+  .product-name {
     font-size: 30px;
     text-transform: uppercase;
-    font-family:  "Tenor Sans";;
+    font-family: "Tenor Sans";
   }
+  
   .stars {
     display: flex;
     gap: 5px;
   }
-  .starticons{
+  
+  .start-icons {
     font-size: 20px;
   }
-  .starnumber{
+  
+  .star-number {
     font-size: 20px;
     margin-top: -5px;
   }
@@ -144,12 +145,14 @@
     gap: 15px;
     font-size: 25px;
     font-weight: 400;
-    font-family:  "Tenor Sans";;
+    font-family: "Tenor Sans";
     padding: 10px;
   }
-  .productdecription{
-    font-family:  "Tenor Sans";
+  
+  .product-description {
+    font-family: "Tenor Sans";
   }
+  
   .final-price {
     font-size: 25px;
   }
@@ -160,7 +163,7 @@
     align-items: center;
   }
   
-  .btn {
+  .btn-custom {
     padding: 5px 10px;
     cursor: pointer;
     background-color: lightgray;
@@ -168,10 +171,11 @@
     border-radius: 5px;
   }
   
-  .qty{
+  .qty {
     font-size: 30px;
     margin-top: 10px;
   }
+  
   .btn-minus,
   .btn-plus {
     width: 30px;
@@ -180,11 +184,13 @@
     justify-content: center;
     align-items: center;
   }
-  .buttondiv{
+  
+  .button-div {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
+  
   .add-to-cart-btn {
     cursor: pointer;
     background-color: black;
@@ -195,34 +201,36 @@
     text-transform: uppercase;
     font-family: 'Roboto Slab', serif;
   }
+  
   .add-to-cart-btn:hover {
     background-color: rgba(0, 0, 0, 0.493);
   }
-  .descriptiondiv {
+  
+  .description-div {
     margin-top: 40px;
     line-height: 20px;
   }
   
-  .descriptionheading {
+  .description-heading {
     font-size: 25px;
     opacity: 0.9;
     font-weight: 800;
   }
   
-  .descriptionpara {
+  .description-para {
     font-size: 16px;
     font-weight: 500;
     opacity: 0.9;
     letter-spacing: 1px;
     text-align: justify;
   }
- 
+  
   @media (max-width: 768px) {
-    .singlrpageimage {
+    .single-page-image {
       height: 200px !important;
     }
   
-    .singlrpageimageslide {
+    .single-page-image-slide {
       height: 90px;
     }
   }

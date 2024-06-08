@@ -16,6 +16,7 @@ import socks13 from '../../Images/socks19.webp';
 import socks14 from '../../Images/socks20.webp';
 import socks15 from '../../Images/socks21.webp';
 import socks16 from '../../Images/socks22.webp';
+import { Link } from 'react-router-dom';
 
 const Shop = () => {
   const [hoveredProduct, setHoveredProduct] = useState(null);
@@ -127,7 +128,7 @@ const Shop = () => {
                   <span className="new-price">&#8377;{product.newPrice}</span>
                   <span className='text-danger'>Save 60%</span>
                 </div>
-                <button className="add-to-cart-button">View Details</button>
+                <Link to='/details/:_id'><button className="add-to-cart-button">View Details</button></Link>
               </div>
             </div>
           ))}

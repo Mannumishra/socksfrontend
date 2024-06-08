@@ -35,18 +35,18 @@ const SinglePage = () => {
 
   return (
     <>
-      <div className="custom-container-fluid productdetailsheight">
-        <div className="custom-container py-5">
-          <div className="custom-row g-5">
-            <div className="custom-col-lg-6">
+      <div className="container-fluid productdetailsheight">
+        <div className="container py-5">
+          <div className="row g-5">
+            <div className="col-lg-6">
               <div className="carousel">
-                <div className="carousel-inner">
+                <div className="carousel-inners">
                   {images.map((image, index) => (
                     <div
                       className={`carousel-item ${index === currentImageIndex ? 'active' : ''}`}
                       key={index}
                     >
-                      <img src={image} className="singlepageimage" alt={`Slide ${index}`} />
+                      <img src={image} className="singlrpageimage" alt={`Slide ${index}`} />
                     </div>
                   ))}
                 </div>
@@ -61,7 +61,7 @@ const SinglePage = () => {
                 {images.map((image, index) => (
                   <img
                     src={image}
-                    className={`singlepageimageslide ${index === currentImageIndex ? 'active' : ''}`}
+                    className={`singlrpageimageslide ${index === currentImageIndex ? 'active' : ''}`}
                     alt={`Thumbnail ${index}`}
                     onClick={() => handleThumbnailClick(index)}
                     key={index}
@@ -69,7 +69,7 @@ const SinglePage = () => {
                 ))}
               </div>
             </div>
-            <div className="custom-col-lg-6 productsecondcol">
+            <div className="col-lg-6 productsecondcol">
               <p className="productname mb-2">Ultra Neyone Edition</p>
               <div className="stars">
                 <i className="fa fa-star text-warning starticons"></i>
@@ -89,23 +89,49 @@ const SinglePage = () => {
                   <del className="text-dark">Rs.1000</del>
                 </div>
                 <div className="text-danger final-price">Rs.800</div>
-                <div>| Save 20%</div>
+                <div>| Save 60%</div>
               </div>
+              {/* <hr /> */}
               <div>
-                <div className="custom-accordion" id="accordionExample">
-                  <div className="custom-accordion-item">
-                    <h2 className="custom-accordion-header" id="headingOne">
-                      <button className="custom-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <p className='productdescription'>Description</p>
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <p className='productdecription'>Description</p>
                       </button>
                     </h2>
-                    <div id="collapseOne" className="custom-accordion-collapse collapse show" aria-labelledby="headingOne">
-                      <div className="custom-accordion-body">
-                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.custom-accordion-body</code>, though the transition does limit overflow.
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                      <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                       </div>
                     </div>
                   </div>
+                  {/* <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                      <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div> */}
+                  {/* <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item #3
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                      <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div> */}
                 </div>
+
               </div>
               <p>
                 <strong>This Item:</strong> Product Name

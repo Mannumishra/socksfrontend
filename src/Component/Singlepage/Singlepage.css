@@ -1,56 +1,66 @@
-.container-fluid-custom {
+/* Custom CSS for SinglePage component */
+
+.container-fluid {
     width: 100%;
     padding: 0;
     margin: 0;
   }
   
-  .product-details-height {
+  .productdetailsheight {
     margin-top: 0px;
   }
   
-  .container-custom {
+  .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
   }
   
-  .row-custom {
+  .row {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
   }
   
-  .col-lg-6-custom {
+  .col-lg-6 {
     flex: 1;
     min-width: 300px;
   }
   
-  .carousel-custom {
+  .carousel {
     position: relative;
   }
   
-  .carousel-inner-custom {
+  .carousel-inners {
     display: flex;
-  }
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* Customize background or border if needed */
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    /* Example box shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
   
-  .carousel-item-custom {
+  .carousel-item {
     flex: 1;
     display: none;
   }
   
-  .carousel-item-custom.active {
+  .carousel-item.active {
     display: block;
   }
   
-  .single-page-image {
+  .singlrpageimage {
     width: 100%;
     height: 400px;
     object-fit: cover;
     cursor: pointer;
   }
   
-  .carousel-control-prev-custom,
-  .carousel-control-next-custom {
+  .carousel-control-prev,
+  .carousel-control-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -61,22 +71,22 @@
     color: orange;
   }
   
-  .carousel-control-prev-custom {
+  .carousel-control-prev {
     left: 0;
   }
   
-  .carousel-control-next-custom {
+  .carousel-control-next {
     right: 0;
   }
   
-  .carousel-control-prev-icon-custom,
-  .carousel-control-next-icon-custom {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
     display: inline-block;
     width: 30px;
     height: 30px;
   }
   
-  .thumbnails-custom {
+  .thumbnails {
     display: flex;
     overflow-x: auto;
     gap: 10px;
@@ -84,7 +94,7 @@
     margin-top: 10px;
   }
   
-  .single-page-image-slide {
+  .singlrpageimageslide {
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -92,32 +102,29 @@
     border: 2px solid transparent;
   }
   
-  .single-page-image-slide.active {
+  .singlrpageimageslide.active {
     border-color: orange;
   }
   
-  .product-second-col {
+  .productsecondcol {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
   
-  .product-name {
+  .productname{
     font-size: 30px;
     text-transform: uppercase;
-    font-family: "Tenor Sans";
+    font-family:  "Tenor Sans";;
   }
-  
   .stars {
     display: flex;
     gap: 5px;
   }
-  
-  .start-icons {
+  .starticons{
     font-size: 20px;
   }
-  
-  .star-number {
+  .starnumber{
     font-size: 20px;
     margin-top: -5px;
   }
@@ -145,14 +152,12 @@
     gap: 15px;
     font-size: 25px;
     font-weight: 400;
-    font-family: "Tenor Sans";
+    font-family:  "Tenor Sans";;
     padding: 10px;
   }
-  
-  .product-description {
-    font-family: "Tenor Sans";
+  .productdecription{
+    font-family:  "Tenor Sans";
   }
-  
   .final-price {
     font-size: 25px;
   }
@@ -163,7 +168,7 @@
     align-items: center;
   }
   
-  .btn-custom {
+  .btn {
     padding: 5px 10px;
     cursor: pointer;
     background-color: lightgray;
@@ -171,11 +176,10 @@
     border-radius: 5px;
   }
   
-  .qty {
+  .qty{
     font-size: 30px;
     margin-top: 10px;
   }
-  
   .btn-minus,
   .btn-plus {
     width: 30px;
@@ -184,13 +188,11 @@
     justify-content: center;
     align-items: center;
   }
-  
-  .button-div {
+  .buttondiv{
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-  
   .add-to-cart-btn {
     cursor: pointer;
     background-color: black;
@@ -201,36 +203,34 @@
     text-transform: uppercase;
     font-family: 'Roboto Slab', serif;
   }
-  
   .add-to-cart-btn:hover {
     background-color: rgba(0, 0, 0, 0.493);
   }
-  
-  .description-div {
+  .descriptiondiv {
     margin-top: 40px;
     line-height: 20px;
   }
   
-  .description-heading {
+  .descriptionheading {
     font-size: 25px;
     opacity: 0.9;
     font-weight: 800;
   }
   
-  .description-para {
+  .descriptionpara {
     font-size: 16px;
     font-weight: 500;
     opacity: 0.9;
     letter-spacing: 1px;
     text-align: justify;
   }
-  
+ 
   @media (max-width: 768px) {
-    .single-page-image {
+    .singlrpageimage {
       height: 200px !important;
     }
   
-    .single-page-image-slide {
+    .singlrpageimageslide {
       height: 90px;
     }
   }

@@ -89,7 +89,7 @@ const SinglePage = () => {
                   <del className="text-dark">Rs.1000</del>
                 </div>
                 <div className="text-danger final-price">Rs.800</div>
-                <div>| Save Rs.200</div>
+                <div>| Save 20%</div>
               </div>
               {/* <hr /> */}
               <div>

@@ -8,6 +8,8 @@ import Shop from '../Shop/Shop'
 import TraindingCollection from '../TraindingColection/TraindingCollection'
 import SeasonCollection from '../Seasoncollection/SeasonCollection'
 import Limtedtime from '../Limtedtime/Limtedtime'
+import Highquality from '../Highquality/Highquality'
+import Widerange from '../WideRange/Widerange'
 
 const Home = () => {
   useEffect(()=>{
@@ -60,6 +62,12 @@ const Home = () => {
 </section>
 <section>
   <Limtedtime />
+</section>
+<section>
+  <Highquality />
+</section>
+<section>
+  <Widerange />
 </section>
  </>
   )

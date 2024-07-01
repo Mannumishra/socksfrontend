@@ -39,7 +39,8 @@
         width: 100%;
     }
     .wideimage img{
-        height: 270px;
+        height: auto;
+        width: 50%;
     }
     .headingwiderange {
         font-size: 19px;
